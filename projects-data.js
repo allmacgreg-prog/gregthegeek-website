@@ -6,6 +6,7 @@
    - status: "dev" (In development), "soon" (Coming soon), "live" (Available now)
    - featured: true = also shows on the home page
    - art: "pinball", "book", or an image path like "assets/my-project.jpg"
+   - cover: (books) a cover image shown on the book art, e.g. "assets/cover.jpg"
    ===================================================================== */
 window.PROJECTS = [
   {
@@ -40,11 +41,12 @@ window.PROJECTS = [
     statusLabel: "Available now on Amazon",
     featured: true,
     art: "book",
+    cover: "assets/puzzle-paradise-vol1.jpg",
     summary:
       "A growing series of puzzle books packed with crosswords, Sudoku and word searches. Volume 1 is out now on Amazon, with more volumes on the way.",
     features: [
-      "Crosswords, Sudoku, word searches and mixed-puzzle volumes",
-      "Available on Amazon",
+      "Volume 1: 45 challenge puzzles, with crosswords, Sudoku and word finds",
+      "Available now on Amazon",
       "Volumes 2 and 3 are already in the works"
     ],
     links: [

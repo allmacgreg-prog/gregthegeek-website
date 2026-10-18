@@ -11,6 +11,9 @@
       return '<div class="project-art art-pinball" aria-hidden="true"><span class="ball"></span>' +
         '<span class="art-label">' + esc(p.artLabel || p.title) + "</span></div>";
     }
+    if (p.art === "book" && p.cover) {
+      return '<div class="project-art art-book"><img class="book-cover" src="' + esc(p.cover) + '" alt="' + esc(p.title) + ' cover" loading="lazy"></div>';
+    }
     if (p.art === "book") {
       var n = [5, "", 3, "", 7, "", 1, "", 9];
       return '<div class="project-art art-book" aria-hidden="true"><div class="book">' +
