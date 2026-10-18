@@ -214,3 +214,41 @@ body::before {
 .mascot-standing { justify-self: center; height: clamp(300px, 42vw, 500px); width: auto; max-width: 100%; filter: drop-shadow(0 18px 30px rgba(0,0,0,.55)) drop-shadow(0 0 22px rgba(62,199,255,.18)); }
 @media (max-width: 760px) { .mascot-standing { height: 300px; order: -1; } }
 @media (max-width: 560px) { .nav { gap: 2px 14px; font-size: .95rem; } .brand img { height: 48px; } }
+
+/* ---------- Contact form ---------- */
+.contact-layout { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.contact-form { background: var(--bg-raised); border: 1px solid var(--line); border-radius: 14px; padding: clamp(20px, 3vw, 32px); display: grid; gap: 18px; min-width: 0; }
+.field-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.field { display: grid; gap: 6px; min-width: 0; }
+.field label { font-weight: 600; font-size: .95rem; }
+.field .opt { color: var(--fg-dim); font-weight: 400; }
+.field input, .field select, .field textarea {
+  width: 100%; font: inherit; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 6px; padding: 11px 12px;
+}
+.field textarea { resize: vertical; min-height: 120px; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--cyan); outline-offset: 1px; border-color: transparent; }
+.field select optgroup { color: var(--fg-dim); }
+.botcheck { position: absolute; left: -9999px; }
+.form-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.form-actions .btn { border: 0; cursor: pointer; }
+.form-actions .btn:disabled { opacity: .6; cursor: wait; }
+.form-status { margin: 0; font-size: .95rem; }
+.form-status.ok { color: var(--green); }
+.form-status.error { color: var(--magenta); }
+.contact-side { display: grid; gap: 14px; }
+.contact-side .btn { justify-self: start; font-size: 1rem; padding: 10px 16px; margin-top: 4px; }
+.contact-item .small { color: var(--fg-dim); font-size: .9rem; }
+
+/* ---------- Booking ---------- */
+.booking-embed { border: 1px solid var(--line); border-radius: 14px; background: var(--bg-raised); overflow: hidden; }
+.booking-embed.live { background: #fff; }
+.booking-embed iframe { display: block; width: 100%; height: 820px; border: 0; }
+.booking-fallback { padding: clamp(24px, 4vw, 44px); display: grid; gap: 12px; }
+.booking-fallback h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+.booking-fallback p { margin: 0 0 8px; color: var(--fg-dim); }
+
+@media (max-width: 760px) {
+  .contact-layout, .field-row { grid-template-columns: minmax(0, 1fr); }
+  .booking-embed iframe { height: 900px; }
+}

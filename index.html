@@ -23,6 +23,7 @@
       <a href="#rates">Rates</a>
       <a href="#reviews">Reviews</a>
       <a href="projects.html">Projects</a>
+      <a href="book.html">Book</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -37,13 +38,13 @@
         <p class="lede">I'm Greg, and Greg the Geek is just me. No call center, no franchise, no rotating technicians. When you call, you talk to me, and I'm the one who shows up and does the work. I come to your home, pick your computer up, or you drop it off.</p>
         <div class="btn-row">
           <a class="btn primary" href="tel:+14085068546">Call or text (408) 506-8546</a>
-          <a class="btn" href="mailto:greg@gregthegeek.com">Email me</a>
+          <a class="btn" href="book.html" data-booking-link>Book an appointment</a>
         </div>
         <ul class="hero-facts">
           <li>$100/hr flat rate</li>
           <li>No travel fees</li>
           <li>Free phone consultation</li>
-          <li>Open 7 days, 8am–9pm</li>
+          <li>7 days a week, 24/7 by availability</li>
         </ul>
       </div>
       <img class="mascot-standing" src="assets/mascot.png" alt="Cartoon of Greg the Geek standing with his arms crossed" width="213" height="601">
@@ -130,14 +131,57 @@
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Contact</p>
-        <h2>Get in touch</h2>
-        <p>Calling or texting is the fastest way to reach me. I reply personally, usually within a few hours.</p>
+        <h2>Tell me what's going on</h2>
+        <p>Pick the problem that fits best and add a few details. The message comes straight to me, and I'll reply personally by your preferred method.</p>
       </div>
-      <div class="contact">
-        <div class="contact-item"><span class="label">Call or text</span><a href="tel:+14085068546">(408) 506-8546</a></div>
-        <div class="contact-item"><span class="label">Email</span><a href="mailto:greg@gregthegeek.com">greg@gregthegeek.com</a></div>
-        <div class="contact-item"><span class="label">Hours</span><span class="value">Mon–Sun, 8am–9pm</span></div>
-        <div class="contact-item"><span class="label">Service area</span><span class="value">Las Vegas &amp; surrounding areas</span></div>
+      <div class="contact-layout">
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field-row">
+            <div class="field"><label for="cf-name">Your name</label><input id="cf-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="cf-phone">Phone <span class="opt">(optional)</span></label><input id="cf-phone" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="cf-reply">Best way to reach you</label>
+              <select id="cf-reply" name="reply_by"><option>Call</option><option>Text</option><option selected>Email</option></select></div>
+          </div>
+          <div class="field"><label for="cf-issue">What do you need help with?</label>
+            <select id="cf-issue" name="issue" required>
+              <option value="" selected disabled>Choose the closest match</option>
+              <optgroup label="Problems">
+                <option>Computer is slow or freezing</option>
+                <option>Pop-ups, virus or suspected malware</option>
+                <option>I was scammed or someone had remote access</option>
+                <option>Computer won't turn on or won't start</option>
+                <option>Lost or deleted files (data recovery)</option>
+                <option>Cracked or broken laptop screen</option>
+                <option>Wi-Fi or internet problems</option>
+                <option>Printer won't print or connect</option>
+                <option>Email, password or account trouble</option>
+              </optgroup>
+              <optgroup label="Setup &amp; upgrades">
+                <option>New computer setup or moving my files</option>
+                <option>Phone or tablet help</option>
+                <option>TV, streaming or smart home setup</option>
+                <option>Custom PC build or upgrade</option>
+                <option>Tech lesson or tutoring</option>
+              </optgroup>
+              <option>Something else</option>
+            </select></div>
+          <div class="field"><label for="cf-message">Tell me more</label>
+            <textarea id="cf-message" name="message" rows="5" required placeholder="What's happening, what kind of device it is, and when it started."></textarea></div>
+          <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send message</button>
+            <p id="form-status" class="form-status" role="status" hidden></p>
+          </div>
+        </form>
+        <aside class="contact-side">
+          <div class="contact-item"><span class="label">Call or text</span><a href="tel:+14085068546">(408) 506-8546</a></div>
+          <div class="contact-item"><span class="label">Book a time</span><a class="btn" href="book.html" data-booking-link>Schedule an appointment</a></div>
+          <div class="contact-item"><span class="label">Hours</span><span class="value">7 days a week, 24/7</span><span class="small">By availability, weekends included</span></div>
+          <div class="contact-item"><span class="label">Service area</span><span class="value">Las Vegas &amp; surrounding areas</span></div>
+        </aside>
       </div>
     </div>
   </section>
@@ -152,5 +196,7 @@
 
 <script src="projects-data.js"></script>
 <script src="projects.js"></script>
+<script src="site-config.js"></script>
+<script src="contact.js"></script>
 </body>
 </html>
