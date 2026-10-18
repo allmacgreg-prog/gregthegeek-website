@@ -69,7 +69,12 @@ body::before {
 }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--fg); }
-.brand img { height: 40px; width: auto; }
+.brand img { height: 56px; width: auto; filter: drop-shadow(0 0 8px rgba(62,199,255,.35)); }
+.site-header .wrap { min-height: 76px; }
+.price-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; margin-bottom: 8px; }
+.price { font-family: var(--font-display); font-weight: 700; font-size: clamp(3rem, 8vw, 4.5rem); line-height: 1; color: var(--amber); }
+.price small { font-size: .4em; color: var(--fg-dim); font-weight: 600; }
+.price-note { font-family: var(--font-mono); color: var(--fg-dim); font-size: .95rem; }
 .brand .wordmark { font-family: var(--font-display); font-weight: 700; font-size: 1.35rem; letter-spacing: 0.02em; }
 .brand .wordmark small { font-size: 0.7em; color: var(--cyan); font-weight: 600; margin-inline: 0.2em; }
 .nav { display: flex; gap: 4px 20px; flex-wrap: wrap; }
@@ -195,3 +200,12 @@ body::before {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* ---------- Reviews ---------- */
+.reviews { columns: 3 280px; column-gap: 16px; }
+.review { break-inside: avoid; margin: 0 0 16px; background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; display: grid; gap: 12px; }
+.review blockquote { margin: 0; font-size: 1.02rem; line-height: 1.55; }
+.review figcaption { font-family: var(--font-mono); font-size: .8rem; color: var(--amber); letter-spacing: .04em; }
+.review figcaption::before { content: "★★★★★  "; color: var(--amber); }
+.contact { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 560px) { .contact { grid-template-columns: minmax(0, 1fr); } }
