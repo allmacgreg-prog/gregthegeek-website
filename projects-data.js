@@ -36,22 +36,22 @@ window.PROJECTS = [
   {
     id: "puzzle-paradise",
     title: "Greg the Geek's Puzzle Paradise",
-    status: "soon",
-    statusLabel: "Coming soon to Amazon",
+    status: "live",
+    statusLabel: "Available now on Amazon",
     featured: true,
     art: "book",
     summary:
-      "A growing series of puzzle books packed with crosswords, Sudoku and word searches. Volume 1 is on its way to Amazon in paperback, with new volumes planned on a regular schedule.",
+      "A growing series of puzzle books packed with crosswords, Sudoku and word searches. Volume 1 is out now on Amazon, with more volumes on the way.",
     features: [
       "Crosswords, Sudoku, word searches and mixed-puzzle volumes",
-      "Paperback, available through Amazon",
+      "Available on Amazon",
       "Volumes 2 and 3 are already in the works"
     ],
     links: [
-      // { label: "Buy Volume 1 on Amazon", url: "https://www.amazon.com/dp/XXXXXXXXXX" }
+      { label: "Get Volume 1 on Amazon", url: "https://www.amazon.com/dp/B0HN6NWBCH" }
     ],
     updates: [
-      { date: "2026-10", text: "Volume 1 paperback submitted to Amazon KDP." }
+      { date: "2026-10", text: "Volume 1 is published and available on Amazon." }
     ]
   }
 ];
