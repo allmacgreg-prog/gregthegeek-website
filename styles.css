@@ -174,6 +174,32 @@ body::before {
 .sudoku i { aspect-ratio: 1; background: #fff; color: #133c78; font: 700 .8rem/1 var(--font-mono); font-style: normal; display: grid; place-items: center; }
 .book .ba { font-family: var(--font-mono); font-size: .62rem; letter-spacing: .1em; opacity: .85; }
 
+/* Several book covers side by side, slightly fanned */
+.art-books { display: flex; justify-content: center; align-items: center; gap: 0; }
+.art-books .book-cover { width: min(46%, 230px); height: auto; aspect-ratio: auto; object-fit: contain; border-radius: 3px 8px 8px 3px; box-shadow: 10px 14px 28px rgba(0,0,0,.55); }
+.art-books .book-cover:first-child { transform: rotate(-5deg) translateX(12px); }
+.art-books .book-cover:last-child { transform: rotate(4deg) translateX(-12px) translateY(8px); z-index: 1; }
+
+/* Screenshot gallery under a project (Projects page) */
+.gallery { grid-column: 1 / -1; border-top: 1px solid var(--line); padding: clamp(18px, 3vw, 28px); display: grid; gap: 12px; }
+.gallery h4 { margin: 0; font-family: var(--font-mono); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--fg-dim); font-weight: 500; }
+.gallery ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 10px; }
+.gallery .shot { display: block; width: 100%; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--bg); cursor: zoom-in; }
+.gallery .shot img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; transition: transform .25s ease; }
+.gallery .shot:hover img, .gallery .shot:focus-visible img { transform: scale(1.04); }
+.gallery .shot:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+
+.viewer { max-width: min(1400px, 96vw); width: 100%; padding: 0; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); color: var(--fg); }
+.viewer::backdrop { background: rgba(4, 8, 15, .88); }
+.viewer figure { margin: 0; }
+.viewer img { display: block; width: 100%; height: auto; max-height: 82vh; object-fit: contain; background: #000; }
+.viewer figcaption { padding: 12px 16px; color: var(--fg-dim); font-size: .95rem; }
+.viewer button { position: absolute; border: 0; background: rgba(10,17,29,.75); color: var(--fg); font-size: 2rem; line-height: 1; width: 48px; height: 48px; border-radius: 50%; cursor: pointer; }
+.viewer button:hover { background: var(--cyan); color: var(--bg); }
+.viewer .v-prev { left: 10px; top: 40%; }
+.viewer .v-next { right: 10px; top: 40%; }
+.viewer .v-close { right: 10px; top: 10px; font-size: 1.6rem; }
+
 /* ---------- Contact ---------- */
 .contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
 .contact-item { background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; display: grid; gap: 4px; }
