@@ -8,5 +8,5 @@
    ===================================================================== */
 window.SITE_CONFIG = {
   formKey: "",
-  bookingUrl: ""
+  bookingUrl: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0d5k1Qf5R9smLZEpKoroO8wxVKs4ypQzvlJEETQHXMYr4n-R4HFz7g8EcAscAeHitEnfU60eN5?gv=true"
 };
