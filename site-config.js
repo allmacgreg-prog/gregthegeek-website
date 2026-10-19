@@ -7,6 +7,6 @@
                (Google Calendar > Create > Appointment schedule > Share).
    ===================================================================== */
 window.SITE_CONFIG = {
-  formKey: "",
+  formKey: "ad85d665-c55b-4d52-8a51-b9a43b861e4c",
   bookingUrl: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0d5k1Qf5R9smLZEpKoroO8wxVKs4ypQzvlJEETQHXMYr4n-R4HFz7g8EcAscAeHitEnfU60eN5?gv=true"
 };
