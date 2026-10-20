@@ -1,5 +1,8 @@
 /* Renders window.PROJECTS into any element with data-projects.
-   data-projects="featured" shows only featured projects; "all" shows everything. */
+   data-projects="featured" shows featured projects as short tiles (home page);
+   "hub" shows every project as a short tile linking to its own page (Projects page);
+   "all" shows every project in full; any other value is a project id and shows
+   just that project in full (each project's own page). */
 (function () {
   function esc(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
@@ -46,10 +49,11 @@
     return '<article class="project" id="' + esc(p.id) + '">' + art(p) +
       '<div class="project-body">' +
       '<span class="status ' + esc(p.status) + '">' + esc(p.statusLabel) + "</span>" +
-      "<h3>" + esc(p.title) + "</h3>" +
+      "<h3>" + (compact && p.page ? '<a href="' + esc(p.page) + '">' + esc(p.title) + "</a>" : esc(p.title)) + "</h3>" +
       '<p class="summary">' + esc(p.summary) + "</p>" +
       (compact ? "" : '<ul class="features">' + feats + "</ul>") +
-      (links ? '<div class="btn-row">' + links + "</div>" : "") +
+      (compact && p.page ? '<div class="btn-row"><a class="btn primary" href="' + esc(p.page) + '">See the ' + esc(p.title) + " page</a></div>" :
+        (links ? '<div class="btn-row">' + links + "</div>" : "")) +
       (ups ? '<div class="updates"><h4>' + (compact ? "Latest" : "Updates") + "</h4><ol>" + ups + "</ol></div>" : "") +
       "</div>" + (compact ? "" : gallery(p)) + "</article>";
   }
@@ -87,12 +91,19 @@
       if (e.key === "ArrowRight") show(at + 1);
     });
   }
-  if (document.querySelector('[data-projects="all"]')) viewer();
+  var needViewer = false;
   document.querySelectorAll("[data-projects]").forEach(function (el) {
     var mode = el.getAttribute("data-projects");
-    var list = (window.PROJECTS || []).filter(function (p) { return mode !== "featured" || p.featured; });
-    el.innerHTML = list.map(function (p) { return card(p, mode === "featured"); }).join("");
+    var compact = mode === "featured" || mode === "hub";
+    var list = (window.PROJECTS || []).filter(function (p) {
+      if (mode === "featured") return p.featured;
+      if (mode === "hub" || mode === "all") return true;
+      return p.id === mode;
+    });
+    if (!compact) needViewer = true;
+    el.innerHTML = list.map(function (p) { return card(p, compact); }).join("");
   });
+  if (needViewer) viewer();
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
 })();

@@ -10,10 +10,14 @@
    - covers: (books) several covers shown side by side, newest last
    - gallery: screenshots shown under the project on the Projects page
        { src: full-size image, thumb: small version, caption: short text }
+   - page: the project's own page (e.g. "pinball-parallax.html"); the Projects
+       page shows a tile linking to it. A new project needs its own page too:
+       copy pinball-parallax.html and change data-projects="..." to the new id.
    ===================================================================== */
 window.PROJECTS = [
   {
     id: "pinball-parallax",
+    page: "pinball-parallax.html",
     title: "Pinball Parallax",
     status: "dev",
     statusLabel: "In development · PC",
@@ -21,7 +25,7 @@ window.PROJECTS = [
     art: "assets/pinball/lobby.jpg",
     artAlt: "Pinball Parallax table-select arcade with Sunset Circuit and Mirrorball Fever cabinets",
     summary:
-      "A next-generation pinball game built in Unreal Engine 5, designed to look and feel like a real modern arcade machine. Walk up to a row of cabinets in a neon arcade and pick a table: Sunset Circuit, Mirrorball Fever and Saturday Morning Mayhem are free, with Doubloon Reef leading the themed tables to follow.",
+      "A next-generation pinball game built in Unreal Engine 5, designed to look and feel like a real modern arcade machine. Walk up to a row of cabinets in a neon arcade and pick a table: Sunset Circuit, Mirrorball Fever and Saturday Morning Mayhem are free to play, with more themed tables to follow.",
     features: [
       "Webcam head tracking: move your head and the table's perspective shifts for a holographic, look-through-the-glass effect",
       "Real pinball hardware on every table: star posts, rubber-band slingshots, pop bumpers, drop targets and wire ramps",
@@ -30,27 +34,27 @@ window.PROJECTS = [
       "Photo mode with a free-roaming camera, controller rumble, and VR support planned"
     ],
     links: [
+      { label: "Join the Discord", url: "https://discord.gg/hmX7Hf4E5" },
+      { label: "Follow on Facebook", url: "https://www.facebook.com/profile.php?id=61595696966480" }
       // { label: "Wishlist on Steam", url: "https://store.steampowered.com/app/XXXX" }
     ],
     gallery: [
       { src: "assets/pinball/lobby.jpg", thumb: "assets/pinball/thumb-lobby.jpg", caption: "The table-select arcade: walk up to a cabinet and press start" },
       { src: "assets/pinball/sunset-bumpers.jpg", thumb: "assets/pinball/thumb-sunset-bumpers.jpg", caption: "Sunset Circuit: pop bumpers under the wire ramps" },
-      { src: "assets/pinball/doubloon-reef-table.jpg", thumb: "assets/pinball/thumb-doubloon-reef-table.jpg", caption: "Doubloon Reef: the pirate table, with your hands on the flipper buttons" },
       { src: "assets/pinball/mirrorball-upper.jpg", thumb: "assets/pinball/thumb-mirrorball-upper.jpg", caption: "Mirrorball Fever: the dance floor and DJ booth" },
       { src: "assets/pinball/smm-lower.jpg", thumb: "assets/pinball/thumb-smm-lower.jpg", caption: "Saturday Morning Mayhem: cartoon art and lit shot inserts" },
-      { src: "assets/pinball/doubloon-reef-ramps.jpg", thumb: "assets/pinball/thumb-doubloon-reef-ramps.jpg", caption: "Doubloon Reef: smooth chrome wire ramps over the bumpers" },
       { src: "assets/pinball/slingshot.jpg", thumb: "assets/pinball/thumb-slingshot.jpg", caption: "Close-up: a slingshot with its rubber band, star posts and lit plastic" }
     ],
     updates: [
-      { date: "2026-10-19", text: "Real pinball hardware is going in across all four tables: posts, bumpers, slingshots, flippers, drop and stand-up targets, and smooth wire ramps." },
+      { date: "2026-10-19", text: "Real pinball hardware is going in across every table: posts, bumpers, slingshots, flippers, drop and stand-up targets, and smooth wire ramps." },
       { date: "2026-10-19", text: "New 16-colour LED displays, and every cabinet in the arcade now has its own lit LED panel and speakers." },
-      { date: "2026-10-18", text: "Doubloon Reef, the first pirate-themed table, is playable." },
       { date: "2026-10-17", text: "New adaptive music engine is in and play-tested." },
       { date: "2026-10-16", text: "Free launch table renamed to Sunset Circuit." }
     ]
   },
   {
     id: "puzzle-paradise",
+    page: "puzzle-paradise.html",
     title: "Greg the Geek's Puzzle Paradise",
     status: "live",
     statusLabel: "Available now on Amazon",
