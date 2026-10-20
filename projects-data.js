@@ -23,15 +23,17 @@ window.PROJECTS = [
     statusLabel: "In development · PC",
     featured: true,
     art: "assets/pinball/lobby.jpg",
-    artAlt: "Pinball Parallax table-select arcade with Sunset Circuit and Mirrorball Fever cabinets",
+    artAlt: "Pinball Parallax table-select arcade with the Sunset Circuit, Mirrorball Fever and Saturday Morning Mayhem cabinets",
     summary:
       "A next-generation pinball game built in Unreal Engine 5, designed to look and feel like a real modern arcade machine. Walk up to a row of cabinets in a neon arcade and pick a table: Sunset Circuit, Mirrorball Fever and Saturday Morning Mayhem are free to play, with more themed tables to follow.",
     features: [
-      "Webcam head tracking: move your head and the table's perspective shifts for a holographic, look-through-the-glass effect",
+      "3D-rendered art on every table: the playfields, backglasses and cabinets are rendered scenes, not flat drawings",
+      "Glowing neon shot inserts that light up the art around them as you play",
+      "Webcam head tracking: lean left or right and the whole table shifts like you're really leaning over a machine",
       "Real pinball hardware on every table: star posts, rubber-band slingshots, pop bumpers, drop targets and wire ramps",
+      "Adaptive music that builds with your play, lights that pulse to the beat, and controller rumble that kicks in during multiball",
       "A 16-colour LED score display with its own animations for each table",
-      "Adaptive music that reacts to how you play, with sound effects that change on every hit",
-      "Photo mode with a free-roaming camera, controller rumble, and VR support planned"
+      "Achievements and high-score leaderboards, photo mode, and VR support planned"
     ],
     links: [
       { label: "Join the Discord", url: "https://discord.gg/hmX7Hf4E5" },
@@ -40,12 +42,20 @@ window.PROJECTS = [
     ],
     gallery: [
       { src: "assets/pinball/lobby.jpg", thumb: "assets/pinball/thumb-lobby.jpg", caption: "The table-select arcade: walk up to a cabinet and press start" },
-      { src: "assets/pinball/sunset-bumpers.jpg", thumb: "assets/pinball/thumb-sunset-bumpers.jpg", caption: "Sunset Circuit: pop bumpers under the wire ramps" },
-      { src: "assets/pinball/mirrorball-upper.jpg", thumb: "assets/pinball/thumb-mirrorball-upper.jpg", caption: "Mirrorball Fever: the dance floor and DJ booth" },
-      { src: "assets/pinball/smm-lower.jpg", thumb: "assets/pinball/thumb-smm-lower.jpg", caption: "Saturday Morning Mayhem: cartoon art and lit shot inserts" },
-      { src: "assets/pinball/slingshot.jpg", thumb: "assets/pinball/thumb-slingshot.jpg", caption: "Close-up: a slingshot with its rubber band, star posts and lit plastic" }
+      { src: "assets/pinball/sunset-inserts.jpg", thumb: "assets/pinball/thumb-sunset-inserts.jpg", caption: "Sunset Circuit: neon shot inserts over the new 3D-rendered road" },
+      { src: "assets/pinball/sunset-bumpers.jpg", thumb: "assets/pinball/thumb-sunset-bumpers.jpg", caption: "Sunset Circuit: pop bumpers under the wire ramps, with the sun on the horizon" },
+      { src: "assets/pinball/sunset-cabinet.jpg", thumb: "assets/pinball/thumb-sunset-cabinet.jpg", caption: "Sunset Circuit's cabinet, with its 3D-rendered side art" },
+      { src: "assets/pinball/mirrorball-floor.jpg", thumb: "assets/pinball/thumb-mirrorball-floor.jpg", caption: "Mirrorball Fever: the light-up dance floor and DJ booth" },
+      { src: "assets/pinball/mirrorball-bumpers.jpg", thumb: "assets/pinball/thumb-mirrorball-bumpers.jpg", caption: "Mirrorball Fever: the pop bumpers and the mirror ball" },
+      { src: "assets/pinball/smm-room.jpg", thumb: "assets/pinball/thumb-smm-room.jpg", caption: "Saturday Morning Mayhem: a sunny living room, rendered in 3D" },
+      { src: "assets/pinball/smm-cabinet.jpg", thumb: "assets/pinball/thumb-smm-cabinet.jpg", caption: "Saturday Morning Mayhem's cabinet in the arcade" }
     ],
     updates: [
+      { date: "2026-10-20", text: "Every table now has 3D-rendered playfield art, and the shot arrows and lights are glowing neon inserts that light up the art around them." },
+      { date: "2026-10-20", text: "Head tracking feels much more natural: lean left and the whole table shifts right, just like leaning over a real machine." },
+      { date: "2026-10-20", text: "The table lights now pulse to the music, and the controller rumbles on the beat during multiball." },
+      { date: "2026-10-20", text: "A new animated splash screen, new slingshot, spinner and rollover sounds, and achievements and leaderboards are ready for launch." },
+      { date: "2026-10-19", text: "New 3D-rendered cabinet and backglass art for every table, and a 90s neon confetti carpet for the arcade." },
       { date: "2026-10-19", text: "Real pinball hardware is going in across every table: posts, bumpers, slingshots, flippers, drop and stand-up targets, and smooth wire ramps." },
       { date: "2026-10-19", text: "New 16-colour LED displays, and every cabinet in the arcade now has its own lit LED panel and speakers." },
       { date: "2026-10-17", text: "New adaptive music engine is in and play-tested." },
