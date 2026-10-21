@@ -48,9 +48,13 @@ window.PROJECTS = [
       { src: "assets/pinball/mirrorball-floor.jpg", thumb: "assets/pinball/thumb-mirrorball-floor.jpg", caption: "Mirrorball Fever: the light-up dance floor and DJ booth" },
       { src: "assets/pinball/mirrorball-bumpers.jpg", thumb: "assets/pinball/thumb-mirrorball-bumpers.jpg", caption: "Mirrorball Fever: the pop bumpers and the mirror ball" },
       { src: "assets/pinball/smm-room.jpg", thumb: "assets/pinball/thumb-smm-room.jpg", caption: "Saturday Morning Mayhem: a sunny living room, rendered in 3D" },
-      { src: "assets/pinball/smm-cabinet.jpg", thumb: "assets/pinball/thumb-smm-cabinet.jpg", caption: "Saturday Morning Mayhem's cabinet in the arcade" }
+      { src: "assets/pinball/smm-cabinet.jpg", thumb: "assets/pinball/thumb-smm-cabinet.jpg", caption: "Saturday Morning Mayhem's cabinet in the arcade" },
+      { src: "assets/pinball/smm-multiball-comic.jpg", thumb: "assets/pinball/thumb-smm-multiball-comic.jpg", caption: "Saturday Morning Mayhem multiball: ink-outlined balls and comic pop-ups on every hit" }
     ],
     updates: [
+      { date: "2026-10-21", text: "Saturday Morning Mayhem's multiball now has a cartoon look: ink-outlined balls, speed lines, comic pop-ups (BOING! BAM! ZAP!) on every bumper and slingshot hit, and KABOOM! when two balls collide." },
+      { date: "2026-10-21", text: "A polish pass on every table: a new clipping check makes sure no part passes through another, and the ball never rolls through a toy or decoration." },
+      { date: "2026-10-21", text: "The outlanes were tuned after a simulated playtest of more than 100,000 balls, so balls last longer and drains feel fair, closer to a real machine." },
       { date: "2026-10-20", text: "Every table now has 3D-rendered playfield art, and the shot arrows and lights are glowing neon inserts that light up the art around them." },
       { date: "2026-10-20", text: "Head tracking feels much more natural: lean left and the whole table shifts right, just like leaning over a real machine." },
       { date: "2026-10-20", text: "The table lights now pulse to the music, and the controller rumbles on the beat during multiball." },
