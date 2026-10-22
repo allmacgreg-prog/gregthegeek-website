@@ -52,6 +52,10 @@ window.PROJECTS = [
       { src: "assets/pinball/smm-multiball-comic.jpg", thumb: "assets/pinball/thumb-smm-multiball-comic.jpg", caption: "Saturday Morning Mayhem multiball: ink-outlined balls and comic pop-ups on every hit" }
     ],
     updates: [
+      { date: "2026-10-22", text: "Wire ramps now look and ride like a real machine's: every rail is one continuous wireform, ramps that meet share one wire on the way down to the flippers, and where two ramps cross, one passes cleanly over the other." },
+      { date: "2026-10-22", text: "A new ball-clearance check runs on every table: the ball never clips through a rail, toy or decoration, whether it's rolling on the playfield or riding a ramp." },
+      { date: "2026-10-22", text: "Action clips: the game can save your best moments as MP4 videos automatically, every time multiball starts or the heat meter hits 100%." },
+      { date: "2026-10-22", text: "DLSS support, and simpler head tracking: it switches on by itself when a webcam is connected, detects your screen size, and you just pick whether the camera sits above or below your screen." },
       { date: "2026-10-21", text: "Saturday Morning Mayhem's multiball now has a cartoon look: ink-outlined balls, speed lines, comic pop-ups (BOING! BAM! ZAP!) on every bumper and slingshot hit, and KABOOM! when two balls collide." },
       { date: "2026-10-21", text: "A polish pass on every table: a new clipping check makes sure no part passes through another, and the ball never rolls through a toy or decoration." },
       { date: "2026-10-21", text: "The outlanes were tuned after a simulated playtest of more than 100,000 balls, so balls last longer and drains feel fair, closer to a real machine." },
