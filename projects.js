@@ -38,6 +38,15 @@
         '<img src="' + esc(g.thumb || g.src) + '" alt="' + esc(g.caption || p.title) + '" loading="lazy" width="640" height="360"></button></li>';
     }).join("") + "</ul></div>";
   }
+  function videos(p) {
+    if (!p.videos || !p.videos.length) return "";
+    return '<div class="videos"><h4>Videos</h4><ul>' + p.videos.map(function (v) {
+      return '<li><figure><video controls playsinline preload="none"' + (v.poster ? ' poster="' + esc(v.poster) + '"' : "") + '>' +
+        '<source src="' + esc(v.src) + '" type="video/mp4">' +
+        '<a href="' + esc(v.src) + '">Download the video</a></video>' +
+        (v.caption ? "<figcaption>" + esc(v.caption) + "</figcaption>" : "") + "</figure></li>";
+    }).join("") + "</ul></div>";
+  }
   function card(p, compact) {
     var feats = (p.features || []).map(function (f) { return "<li>" + esc(f) + "</li>"; }).join("");
     var links = (p.links || []).map(function (l, i) {
@@ -55,7 +64,7 @@
       (compact && p.page ? '<div class="btn-row"><a class="btn primary" href="' + esc(p.page) + '">See the ' + esc(p.title) + " page</a></div>" :
         (links ? '<div class="btn-row">' + links + "</div>" : "")) +
       (ups ? '<div class="updates"><h4>' + (compact ? "Latest" : "Updates") + "</h4><ol>" + ups + "</ol></div>" : "") +
-      "</div>" + (compact ? "" : gallery(p)) + "</article>";
+      "</div>" + (compact ? "" : videos(p) + gallery(p)) + "</article>";
   }
   // a simple viewer for the screenshots: click to enlarge, arrows / swipe-free buttons to step through
   function viewer() {

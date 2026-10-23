@@ -180,6 +180,14 @@ body::before {
 .art-books .book-cover:first-child { transform: rotate(-5deg) translateX(12px); }
 .art-books .book-cover:last-child { transform: rotate(4deg) translateX(-12px) translateY(8px); z-index: 1; }
 
+/* Videos under a project (above the screenshots) */
+.videos { grid-column: 1 / -1; border-top: 1px solid var(--line); padding: clamp(18px, 3vw, 28px); display: grid; gap: 12px; }
+.videos h4 { margin: 0; font-family: var(--font-mono); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--fg-dim); font-weight: 500; }
+.videos ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.videos figure { margin: 0; display: grid; gap: 8px; }
+.videos video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: 8px; background: #000; }
+.videos figcaption { color: var(--fg-dim); font-size: .9rem; }
+
 /* Screenshot gallery under a project (Projects page) */
 .gallery { grid-column: 1 / -1; border-top: 1px solid var(--line); padding: clamp(18px, 3vw, 28px); display: grid; gap: 12px; }
 .gallery h4 { margin: 0; font-family: var(--font-mono); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--fg-dim); font-weight: 500; }

@@ -8,6 +8,8 @@
    - art: "pinball", "book", or an image path like "assets/my-project.jpg"
    - cover: (books) a cover image shown on the book art, e.g. "assets/cover.jpg"
    - covers: (books) several covers shown side by side, newest last
+   - videos: gameplay videos shown above the screenshots
+       { src: an .mp4 under 50 MB in assets/, poster: a still image, caption: short text }
    - gallery: screenshots shown under the project on the Projects page
        { src: full-size image, thumb: small version, caption: short text }
    - page: the project's own page (e.g. "pinball-parallax.html"); the Projects
@@ -39,6 +41,9 @@ window.PROJECTS = [
       { label: "Join the Discord", url: "https://discord.gg/hmX7Hf4E5" },
       { label: "Follow on Facebook", url: "https://www.facebook.com/profile.php?id=61595696966480" }
       // { label: "Wishlist on Steam", url: "https://store.steampowered.com/app/XXXX" }
+    ],
+    videos: [
+      { src: "assets/pinball/video/promo-oct-2026.mp4", poster: "assets/pinball/video/promo-oct-2026.jpg", caption: "Gameplay: Sunset Circuit and Mirrorball Fever, with the facecam on to show the head tracking (2:52)" }
     ],
     gallery: [
       { src: "assets/pinball/lobby.jpg", thumb: "assets/pinball/thumb-lobby.jpg", caption: "The table-select arcade: walk up to a cabinet and press start" },
