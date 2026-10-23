@@ -38,12 +38,12 @@ window.PROJECTS = [
       "Achievements and high-score leaderboards, photo mode, and VR support planned"
     ],
     links: [
-      { label: "Join the Discord", url: "https://discord.gg/kKr92Gaw8" },
+      { label: "Join the Discord", url: "https://discord.gg/PwKDBGg72q" },
       { label: "Follow on Facebook", url: "https://www.facebook.com/profile.php?id=61595696966480" }
       // { label: "Wishlist on Steam", url: "https://store.steampowered.com/app/XXXX" }
     ],
     videos: [
-      { src: "assets/pinball/video/promo-oct-2026.mp4", poster: "assets/pinball/video/promo-oct-2026.jpg", caption: "Gameplay: Sunset Circuit and Mirrorball Fever, with the facecam on to show the head tracking (2:52)" }
+      { src: "assets/pinball/video/promo-oct-2026.mp4?v=2", poster: "assets/pinball/video/promo-oct-2026.jpg", caption: "Gameplay: Sunset Circuit and Mirrorball Fever, with the facecam on to show the head tracking (2:52)" }
     ],
     gallery: [
       { src: "assets/pinball/lobby.jpg", thumb: "assets/pinball/thumb-lobby.jpg", caption: "The table-select arcade: walk up to a cabinet and press start" },
