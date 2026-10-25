@@ -312,3 +312,20 @@ body::before {
 .eyebrow a:hover { text-decoration-thickness: 2px; }
 .project h3 a { color: inherit; text-decoration: none; }
 .project h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* ---------- Leave a review ---------- */
+.review-form { max-width: 760px; }
+#leave-review { scroll-margin-top: 80px; }
+.star-field { border: 0; padding: 0; margin: 0; }
+.star-field legend { font-weight: 600; font-size: .95rem; padding: 0; margin-bottom: 6px; }
+.star-input { display: flex; flex-direction: row-reverse; justify-content: flex-end; gap: 4px; }
+.star-input input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.star-input label { cursor: pointer; font-size: 2.1rem; line-height: 1; color: var(--line); transition: color .12s ease, transform .12s ease; }
+.star-input label::before { content: "\2605"; }
+.star-input label:hover, .star-input label:hover ~ label,
+.star-input input:checked ~ label { color: var(--amber); }
+.star-input label:hover { transform: scale(1.12); }
+.star-input input:focus-visible + label { outline: 2px solid var(--cyan); outline-offset: 2px; border-radius: 4px; }
+.consent { display: flex; gap: 10px; align-items: flex-start; font-size: .95rem; color: var(--fg-dim); cursor: pointer; }
+.consent input { margin-top: 4px; accent-color: var(--amber); width: 18px; height: 18px; flex: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

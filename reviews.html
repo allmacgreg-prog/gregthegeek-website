@@ -39,6 +39,7 @@
       <div class="btn-row" style="margin-top:20px">
         <a class="btn primary" href="tel:+14085068546">Call or text (408) 506-8546</a>
         <a class="btn" href="book.html">Book an appointment</a>
+        <a class="btn" href="#leave-review">Leave a review</a>
       </div>
     </div>
   </section>
@@ -152,6 +153,54 @@
       </div>
     </div>
   </section>
+  <section class="band" id="leave-review">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Leave a review</p>
+        <h2>Did I help you out?</h2>
+        <p>I'd love to hear how it went. Your review comes straight to me, and with your OK I may add it to this page. Your email stays private and is never shown.</p>
+      </div>
+      <form id="review-form" class="contact-form review-form" novalidate>
+        <div class="field-row">
+          <div class="field"><label for="rf-name">Your name</label><input id="rf-name" name="name" type="text" autocomplete="name" required placeholder="First name and last initial is fine"></div>
+          <div class="field"><label for="rf-email">Email <span class="opt">(private, never shown)</span></label><input id="rf-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <fieldset class="field star-field">
+          <legend>Your rating</legend>
+          <div class="star-input">
+            <input type="radio" id="rf-star5" name="rating" value="5" required><label for="rf-star5" title="5 stars"><span class="sr-only">5 stars</span></label>
+            <input type="radio" id="rf-star4" name="rating" value="4"><label for="rf-star4" title="4 stars"><span class="sr-only">4 stars</span></label>
+            <input type="radio" id="rf-star3" name="rating" value="3"><label for="rf-star3" title="3 stars"><span class="sr-only">3 stars</span></label>
+            <input type="radio" id="rf-star2" name="rating" value="2"><label for="rf-star2" title="2 stars"><span class="sr-only">2 stars</span></label>
+            <input type="radio" id="rf-star1" name="rating" value="1"><label for="rf-star1" title="1 star"><span class="sr-only">1 star</span></label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="rf-service">What did I help with?</label>
+          <select id="rf-service" name="service" required>
+            <option value="" selected disabled>Choose the closest match</option>
+            <option>Slow computer or tune-up</option>
+            <option>Virus, malware or scam cleanup</option>
+            <option>Computer won't start or hardware repair</option>
+            <option>Data recovery or file transfer</option>
+            <option>New computer setup</option>
+            <option>Wi-Fi, network or printer</option>
+            <option>Email, password or account help</option>
+            <option>Phone, tablet, TV or smart home</option>
+            <option>Custom PC build or upgrade</option>
+            <option>Tech lesson or tutoring</option>
+            <option>Something else</option>
+          </select></div>
+        <div class="field"><label for="rf-review">Your review</label>
+          <textarea id="rf-review" name="review" rows="5" required placeholder="What was the problem, and how did it go?"></textarea></div>
+        <label class="consent"><input type="checkbox" name="ok_to_publish" value="Yes"> It's OK to post my review and name on GregTheGeek.com</label>
+        <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send my review</button>
+          <p id="review-status" class="form-status" role="status" hidden></p>
+        </div>
+      </form>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
@@ -163,5 +212,7 @@
 
 <script src="projects-data.js"></script>
 <script src="projects.js"></script>
+<script src="site-config.js"></script>
+<script src="review.js"></script>
 </body>
 </html>
