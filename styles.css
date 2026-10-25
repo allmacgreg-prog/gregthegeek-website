@@ -179,6 +179,12 @@ body::before {
 .art-books .book-cover { width: min(46%, 230px); height: auto; aspect-ratio: auto; object-fit: contain; border-radius: 3px 8px 8px 3px; box-shadow: 10px 14px 28px rgba(0,0,0,.55); }
 .art-books .book-cover:first-child { transform: rotate(-5deg) translateX(12px); }
 .art-books .book-cover:last-child { transform: rotate(4deg) translateX(-12px) translateY(8px); z-index: 1; }
+/* Three or more covers: smaller and overlapping so they fit */
+.art-books .book-cover:first-child:nth-last-child(n+3),
+.art-books .book-cover:first-child:nth-last-child(n+3) ~ .book-cover { width: min(30%, 170px); margin: 0 -3%; transform: rotate(-2deg); }
+.art-books .book-cover:first-child:nth-last-child(n+3) { transform: rotate(-6deg) translateY(6px); }
+.art-books .book-cover:first-child:nth-last-child(n+3) ~ .book-cover:nth-child(even) { transform: rotate(2deg) translateY(-6px); }
+.art-books .book-cover:first-child:nth-last-child(n+3) ~ .book-cover:last-child { transform: rotate(6deg) translateY(8px); z-index: 1; }
 
 /* Videos under a project (above the screenshots) */
 .videos { grid-column: 1 / -1; border-top: 1px solid var(--line); padding: clamp(18px, 3vw, 28px); display: grid; gap: 12px; }

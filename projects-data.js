@@ -85,21 +85,26 @@ window.PROJECTS = [
     art: "book",
     covers: [
       { src: "assets/puzzle-paradise-vol1.jpg", alt: "Greg the Geek's Puzzle Paradise Volume 1 cover" },
-      { src: "https://m.media-amazon.com/images/I/71MDnxRFi6L._SL800_.jpg", alt: "Greg the Geek's Puzzle Paradise Volume 2 cover" }
+      { src: "https://m.media-amazon.com/images/I/71MDnxRFi6L._SL800_.jpg", alt: "Greg the Geek's Puzzle Paradise Volume 2 cover" },
+      { src: "https://m.media-amazon.com/images/I/71PcCL4uZRL._SL800_.jpg", alt: "Greg the Geek's Puzzle Paradise Volume 3 cover" },
+      { src: "https://m.media-amazon.com/images/I/71cjVXjf78L._SL800_.jpg", alt: "Greg the Geek's Puzzle Paradise Volume 4 cover" }
     ],
     summary:
-      "A growing series of puzzle books packed with crosswords, Sudoku and word searches, for puzzlers of every skill level. Volumes 1 and 2 are out now on Amazon, with more on the way.",
+      "A growing series of puzzle books packed with crosswords, Sudoku and word searches, for puzzlers of every skill level. Volumes 1 through 4 are out now on Amazon, with more on the way.",
     features: [
-      "Volume 1: 45 challenge puzzles, with crosswords, Sudoku and word finds",
-      "Volume 2: a fresh mix of Sudoku, word searches and crosswords in a large 8.5 x 11 inch paperback",
-      "Both volumes available now on Amazon",
-      "Volume 3 is already in the works"
+      "45 puzzles in every volume: crosswords, Sudoku and word searches",
+      "Large 8.5 x 11 inch paperbacks, $6.99 each",
+      "Volumes 1, 2, 3 and 4 available now on Amazon",
+      "Volumes 5 and 6 are on the way"
     ],
     links: [
+      { label: "Get Volume 4 on Amazon", url: "https://www.amazon.com/dp/B0HNQXTJSN" },
+      { label: "Get Volume 3 on Amazon", url: "https://www.amazon.com/dp/B0HNP6YDXF" },
       { label: "Get Volume 2 on Amazon", url: "https://www.amazon.com/dp/B0HNKJYQVG" },
       { label: "Get Volume 1 on Amazon", url: "https://www.amazon.com/dp/B0HN6NWBCH" }
     ],
     updates: [
+      { date: "2026-10-25", text: "Volumes 3 and 4 are published and available on Amazon." },
       { date: "2026-10-16", text: "Volume 2 is published and available on Amazon." },
       { date: "2026-10", text: "Volume 1 is published and available on Amazon." }
     ]
