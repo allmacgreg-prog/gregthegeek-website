@@ -39,7 +39,7 @@ window.PROJECTS = [
       "Its own 18-track soundtrack, Pinball Parallax Vol. 1 (Original Soundtrack), out now on Spotify and YouTube Music, with Apple Music coming soon"
     ],
     links: [
-      { label: "Join the Discord", url: "https://discord.gg/PwKDBGg72q" },
+      { label: "Join the Discord", url: "https://discord.gg/AAPrEfvS5f" },
       { label: "Soundtrack on Spotify", url: "https://open.spotify.com/album/3eqtEtMmigobIDDRwvfJAf" },
       { label: "Soundtrack on YouTube Music", url: "https://music.youtube.com/browse/MPREb_gSSqNzhaZ5U" },
       { label: "Follow on TikTok", url: "https://www.tiktok.com/@gregthegeekai" },
