@@ -35,10 +35,14 @@ window.PROJECTS = [
       "Real pinball hardware on every table: star posts, rubber-band slingshots, pop bumpers, drop targets and wire ramps",
       "Adaptive music that builds with your play, lights that pulse to the beat, and controller rumble that kicks in during multiball",
       "A 16-colour LED score display with its own animations for each table",
-      "Achievements and high-score leaderboards, photo mode, and VR support planned"
+      "Achievements and high-score leaderboards, photo mode, and VR support planned",
+      "Its own 18-track soundtrack, Pinball Parallax Vol. 1 (Original Soundtrack), out now on Spotify and YouTube Music, with Apple Music coming soon"
     ],
     links: [
       { label: "Join the Discord", url: "https://discord.gg/PwKDBGg72q" },
+      { label: "Soundtrack on Spotify", url: "https://open.spotify.com/album/3eqtEtMmigobIDDRwvfJAf" },
+      { label: "Soundtrack on YouTube Music", url: "https://music.youtube.com/browse/MPREb_gSSqNzhaZ5U" },
+      { label: "Follow on TikTok", url: "https://www.tiktok.com/@gregthegeekai" },
       { label: "Follow on Facebook", url: "https://www.facebook.com/profile.php?id=61595696966480" }
       // { label: "Wishlist on Steam", url: "https://store.steampowered.com/app/XXXX" }
     ],
@@ -57,6 +61,9 @@ window.PROJECTS = [
       { src: "assets/pinball/smm-multiball-comic.jpg", thumb: "assets/pinball/thumb-smm-multiball-comic.jpg", caption: "Saturday Morning Mayhem multiball: ink-outlined balls and comic pop-ups on every hit" }
     ],
     updates: [
+      { date: "2026-10-28", text: "Pinball Parallax is on TikTok! Follow @gregthegeekai for gameplay clips, head-tracking demos and soundtrack previews." },
+      { date: "2026-10-28", text: "The soundtrack is out: Pinball Parallax Vol. 1 (Original Soundtrack), 18 tracks by GregTheGeek, is streaming now on Spotify and YouTube Music. Apple Music is coming soon." },
+      { date: "2026-10-28", text: "Three DLC tables are coming on launch day: Doubloon Reef, Shardfire and Giant's Toll. You can already hear their music on the soundtrack." },
       { date: "2026-10-22", text: "Wire ramps now look and ride like a real machine's: every rail is one continuous wireform, ramps that meet share one wire on the way down to the flippers, and where two ramps cross, one passes cleanly over the other." },
       { date: "2026-10-22", text: "A new ball-clearance check runs on every table: the ball never clips through a rail, toy or decoration, whether it's rolling on the playfield or riding a ramp." },
       { date: "2026-10-22", text: "Facecam option: show your webcam in a corner of the screen so videos you record with NVIDIA App, Xbox Game Bar or OBS show the table moving with your head." },
