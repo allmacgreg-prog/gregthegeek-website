@@ -36,11 +36,12 @@ window.PROJECTS = [
       "Adaptive music that builds with your play, lights that pulse to the beat, and controller rumble that kicks in during multiball",
       "A 16-colour LED score display with its own animations for each table",
       "Achievements and high-score leaderboards, photo mode, and VR support planned",
-      "Its own 18-track soundtrack, Pinball Parallax Vol. 1 (Original Soundtrack), out now on Spotify and YouTube Music, with Apple Music coming soon"
+      "Its own 18-track soundtrack, Pinball Parallax Vol. 1 (Original Soundtrack), out now on Spotify, Apple Music and YouTube Music"
     ],
     links: [
       { label: "Join the Discord", url: "https://discord.gg/AAPrEfvS5f" },
       { label: "Soundtrack on Spotify", url: "https://open.spotify.com/album/3eqtEtMmigobIDDRwvfJAf" },
+      { label: "Soundtrack on Apple Music", url: "https://music.apple.com/us/album/pinball-parallax-vol-1-original-soundtrack/6827988104" },
       { label: "Soundtrack on YouTube Music", url: "https://music.youtube.com/browse/MPREb_gSSqNzhaZ5U" },
       { label: "Follow on TikTok", url: "https://www.tiktok.com/@gregthegeekai" },
       { label: "Follow on Facebook", url: "https://www.facebook.com/profile.php?id=61595696966480" }
@@ -61,6 +62,7 @@ window.PROJECTS = [
       { src: "assets/pinball/smm-multiball-comic.jpg", thumb: "assets/pinball/thumb-smm-multiball-comic.jpg", caption: "Saturday Morning Mayhem multiball: ink-outlined balls and comic pop-ups on every hit" }
     ],
     updates: [
+      { date: "2026-10-29", text: "The soundtrack is now on Apple Music too! Pinball Parallax Vol. 1 (Original Soundtrack) is streaming on Spotify, Apple Music and YouTube Music." },
       { date: "2026-10-28", text: "Pinball Parallax is on TikTok! Follow @gregthegeekai for gameplay clips, head-tracking demos and soundtrack previews." },
       { date: "2026-10-28", text: "The soundtrack is out: Pinball Parallax Vol. 1 (Original Soundtrack), 18 tracks by GregTheGeek, is streaming now on Spotify and YouTube Music. Apple Music is coming soon." },
       { date: "2026-10-28", text: "Three DLC tables are coming on launch day: Doubloon Reef, Shardfire and Giant's Toll. You can already hear their music on the soundtrack." },
