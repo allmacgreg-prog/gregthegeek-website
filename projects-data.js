@@ -3,6 +3,7 @@
    This is the only file you need to edit to add a project or post an update.
    - New project: copy one { ... } block, paste it at the TOP of the list, edit it.
    - New update: add a line at the TOP of that project's "updates" list.
+       Optional link on an update: link: { label: "Watch on TikTok", url: "https://..." }
    - status: "dev" (In development), "soon" (Coming soon), "live" (Available now)
    - featured: true = also shows on the home page
    - art: "pinball", "book", or an image path like "assets/my-project.jpg"
@@ -67,6 +68,7 @@ window.PROJECTS = [
       { src: "assets/pinball/smm-multiball-comic.jpg", thumb: "assets/pinball/thumb-smm-multiball-comic.jpg", caption: "Saturday Morning Mayhem multiball: ink-outlined balls and comic pop-ups on every hit" }
     ],
     updates: [
+      { date: "2026-11-07", text: "Dev update: a busy few days under the hood. The UI overhaul is underway (less glare, a ball that stands out, and a cabinet-style side panel in landscape), the LED display is moving to a sharper 128x48, 256-colour panel with all-new animations, spoken callouts are on the way, the new Recommended setting aims for 120 fps tuned by a multiball benchmark, and portrait mode keeps the whole table in view. Release is still \"when it's polished enough.\"", link: { label: "Watch the latest clip on TikTok", url: "https://www.tiktok.com/t/ZPL4GkgeP/" } },
       { date: "2026-11-04", text: "Portrait mode is in, for rotated monitors and cabinet builds: you see the whole table from above, the camera only zooms in on the ball while you pull back the plunger, and the facecam sits small in the bottom-right corner. Portrait, landscape and VR are each tuned on their own, so a fix for one never changes the others." },
       { date: "2026-11-03", text: "The LED score display is getting a big upgrade: a sharper 128x48 panel with 256 colours, and every table's animations are being remade from scratch to look like a modern 2010s-era cabinet, never below 10 fps. The display stays clear of the backglass art and its title." },
       { date: "2026-11-03", text: "Spoken callouts are coming: \"Jackpot!\" and more, called out on every table." },

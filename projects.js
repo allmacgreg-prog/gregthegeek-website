@@ -53,7 +53,8 @@
       return '<a class="btn' + (i === 0 ? " primary" : "") + '" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + "</a>";
     }).join("");
     var ups = (p.updates || []).slice(0, compact ? 1 : 5).map(function (u) {
-      return '<li><time datetime="' + esc(u.date) + '">' + esc(u.date) + "</time>" + esc(u.text) + "</li>";
+      return '<li><time datetime="' + esc(u.date) + '">' + esc(u.date) + "</time>" + esc(u.text) +
+        (u.link ? ' <a href="' + esc(u.link.url) + '" target="_blank" rel="noopener">' + esc(u.link.label) + "</a>" : "") + "</li>";
     }).join("");
     return '<article class="project" id="' + esc(p.id) + '">' + art(p) +
       '<div class="project-body">' +
