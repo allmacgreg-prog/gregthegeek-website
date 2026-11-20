@@ -51,6 +51,7 @@ window.PROJECTS = [
       { label: "Soundtrack on Apple Music", url: "https://music.apple.com/us/album/pinball-parallax-vol-1-original-soundtrack/6827988104" },
       { label: "Soundtrack on YouTube Music", url: "https://music.youtube.com/browse/MPREb_gSSqNzhaZ5U" },
       { label: "Follow on TikTok", url: "https://www.tiktok.com/@gregthegeekai" },
+      { label: "Watch on YouTube", url: "https://www.youtube.com/@GregTheGeekAI" },
       { label: "Follow on Facebook", url: "https://www.facebook.com/profile.php?id=61595696966480" }
       // { label: "Wishlist on Steam", url: "https://store.steampowered.com/app/XXXX" }
     ],
@@ -69,6 +70,7 @@ window.PROJECTS = [
       { src: "assets/pinball/smm-multiball-comic.jpg", thumb: "assets/pinball/thumb-smm-multiball-comic.jpg", caption: "Saturday Morning Mayhem multiball: ink-outlined balls and comic pop-ups on every hit" }
     ],
     updates: [
+      { date: "2026-11-19", text: "Pinball Parallax is on YouTube! Subscribe to @GregTheGeekAI for portrait gameplay Shorts: table demos with regular play and multiball.", link: { label: "Watch on YouTube", url: "https://www.youtube.com/@GregTheGeekAI" } },
       { date: "2026-11-15", text: "Meet Glitch District, the fourth DLC table: every night at three, reality skips. Three flippers, a clock the whole game runs on, its own voiced characters, Jitter and Moth, and a multiball where the balls turn into crackling plasma globes. Its three songs will open the soundtrack's Volume 2." },
       { date: "2026-11-15", text: "A new opening: the machine powers up and runs a real self-test, firing every lamp, flipper, pop bumper, slingshot, spinner and toy one after another while the display names each part. Any button skips it." },
       { date: "2026-11-15", text: "A new camera: it follows the ball up to the top of the table, where you can see the display and the backglass, and swings back down the moment the ball heads for the flippers. If a ramp or toy hides the ball, it tilts to a higher angle. Multiball still pulls back so every ball stays in view, and demo mode now uses the same camera." },
