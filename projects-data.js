@@ -52,7 +52,8 @@ window.PROJECTS = [
       { label: "Soundtrack on YouTube Music", url: "https://music.youtube.com/browse/MPREb_gSSqNzhaZ5U" },
       { label: "Follow on TikTok", url: "https://www.tiktok.com/@gregthegeekai" },
       { label: "Watch on YouTube", url: "https://www.youtube.com/@GregTheGeekAI" },
-      { label: "Follow on Facebook", url: "https://www.facebook.com/profile.php?id=61595696966480" }
+      { label: "Follow on Facebook", url: "https://www.facebook.com/profile.php?id=61595696966480" },
+      { label: "Follow on X", url: "https://x.com/GregTheGeekAI" }
       // { label: "Wishlist on Steam", url: "https://store.steampowered.com/app/XXXX" }
     ],
     videos: [
